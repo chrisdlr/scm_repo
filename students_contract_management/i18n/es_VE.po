@@ -1,0 +1,566 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* students_contract_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240125\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-22 04:51+0000\n"
+"PO-Revision-Date: 2024-08-22 04:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2 oe_edit_only\" aria-label=\"Arrow "
+"icon\" title=\"Arrow\"/>"
+msgstr ""
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "<span class=\"o_stat_info\">Add payment</span>"
+msgstr "<span class=\"o_stat_info\">Agregar pago</span>"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model,name:students_contract_management.model_add_contract_payment
+msgid "Add Contract Payment"
+msgstr "Agregar pago de contrato"
+
+#. module: students_contract_management
+#: model:ir.actions.act_window,name:students_contract_management.add_contract_payment_wizard_action
+#: model_terms:ir.ui.view,arch_db:students_contract_management.add_contract_payment_form_view
+msgid "Add contract payment"
+msgstr "Agregar pago de contrato"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.add_contract_payment_form_view
+msgid "Add payment"
+msgstr "Agregar pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__add_contract_payment__payment_method__bank
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract_payment__payment_method__bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.add_contract_payment_form_view
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__state__cancelled
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__add_contract_payment__payment_method__cash
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract_payment__payment_method__cash
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__state__confirmed
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: students_contract_management
+#: model:ir.model,name:students_contract_management.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__contract_id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__contract_id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__contract_lines
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Contract Lines"
+msgstr "Líneas de contrato"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__contract_number
+msgid "Contract Number"
+msgstr "Número de contrato"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__create_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__create_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__create_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__create_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__create_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__create_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__add_contract_payment__payment_method__credit_card
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract_payment__payment_method__credit_card
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__currency_id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__currency_id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__currency_id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__display_name
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__display_name
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__display_name
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__state__done
+msgid "Done"
+msgstr "Hecho"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__date_end
+msgid "Finish Date"
+msgstr "Fecha de finalización"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__id
+msgid "ID"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__message_has_error
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment____last_update
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract____last_update
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines____last_update
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__write_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__write_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__write_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__write_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__write_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__write_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: students_contract_management
+#. odoo-python
+#: code:addons/students_contract_management/models/students_contract.py:0
+#: code:addons/students_contract_management/models/students_contract.py:0
+#: code:addons/students_contract_management/models/students_contract.py:0
+#: code:addons/students_contract_management/models/students_contract.py:0
+#: code:addons/students_contract_management/models/students_contract_payment.py:0
+#: code:addons/students_contract_management/models/students_contract_payment.py:0
+#: code:addons/students_contract_management/models/students_contract_payment.py:0
+#: code:addons/students_contract_management/models/students_contract_payment.py:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__payment_state__not_paid
+msgid "Not Paid"
+msgstr "Sin pagar"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Not paid"
+msgstr "Sin pagar"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__payment_state__paid
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__payment_state__partially_paid
+msgid "Partially Paid"
+msgstr "Parcialmente pagado"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Partially paid"
+msgstr "Parcialmente pagado"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__payment_amount
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__payment_amount
+msgid "Payment Amount"
+msgstr "Monto del pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__payment_date
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__payment_date
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__payment_lines
+msgid "Payment Lines"
+msgstr "Líneas de pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__payment_method
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__payment_method
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__payment_note
+msgid "Payment Note"
+msgstr "Nota de pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__payment_number
+msgid "Payment Number"
+msgstr "Número de pago"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__payment_state
+msgid "Payment State"
+msgstr "Estado de pago"
+
+#. module: students_contract_management
+#. odoo-python
+#: code:addons/students_contract_management/wizards/add_contract_payment.py:0
+#, python-format
+msgid "Payment amount is greater than total to pay."
+msgstr "El monto del pago es mayor que el total a pagar."
+
+#. module: students_contract_management
+#. odoo-python
+#: code:addons/students_contract_management/wizards/add_contract_payment.py:0
+#, python-format
+msgid "Payment of %s %s added."
+msgstr "Pago de %s %s agregado."
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__product_tmpl_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_res_partner__role
+#: model:ir.model.fields,field_description:students_contract_management.field_res_users__role
+msgid "Role"
+msgstr "Rol"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Set to draft"
+msgstr "Establecer como borrador"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__date_start
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__state
+msgid "State"
+msgstr "Estado"
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__student_id
+#: model:ir.model.fields.selection,name:students_contract_management.selection__res_partner__role__student
+msgid "Student"
+msgstr "Estudiante"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_tree_view
+msgid "Student contracts"
+msgstr "Contratos de estudiantes"
+
+#. module: students_contract_management
+#: model:ir.actions.act_window,name:students_contract_management.action_open_students_contract_management
+#: model:ir.model,name:students_contract_management.model_students_contract
+#: model:ir.model,name:students_contract_management.model_students_contract_payment
+msgid "Students Contract"
+msgstr "Contrato de estudiantes"
+
+#. module: students_contract_management
+#: model:ir.model,name:students_contract_management.model_students_contract_lines
+msgid "Students Contract Lines"
+msgstr "Líneas de contrato de estudiantes"
+
+#. module: students_contract_management
+#: model:ir.ui.menu,name:students_contract_management.students_contract_main_menu
+msgid "Students Contract Management"
+msgstr "Gestión de contratos de estudiantes"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Students contract form"
+msgstr "Formulario de contrato de estudiantes"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__price_subtotal
+msgid "Subtotal"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__res_partner__role__teacher
+msgid "Teacher"
+msgstr "Docente"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__terms
+msgid "Terms and Conditions"
+msgstr "Términos y condiciones"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Terms and conditions..."
+msgstr "Términos y condiciones..."
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__amount_total
+msgid "Total"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__total_to_pay
+msgid "Total to Pay"
+msgstr "Total a pagar"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.add_contract_payment_form_view
+msgid "Total to pay"
+msgstr "Total a pagar"
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__price_unit
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
+msgid "Validity"
+msgstr "Validez"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_students_contract__website_message_ids
+msgid "Website communication history"
+msgstr ""

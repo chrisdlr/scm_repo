@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="add_contract_payment_form_view" model="ir.ui.view">
+        <field name="name">Add contract payment form view</field>
+        <field name="model">add.contract.payment</field>
+        <field name="arch" type="xml">
+            <form string="Add contract payment">
+                <sheet>
+                    <div class="alert alert-info alert-dismissible rounded-0 fade show d-print-none css_editable_mode_hidden">
+                        <div class="container">
+                            <div class="text-center">
+                                <div>
+                                    <h3>Total to pay <field class="oe_inline" name="total_to_pay" readonly="1"/></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <field name="contract_id" required="1" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+
+                    <group>
+                        <group>
+                            <field name="payment_amount" required="1"/>
+                            <field name="payment_date"/>
+                        </group>
+                        <group>
+                            <field name="payment_method"/>
+                            <field name="notes" widget="text"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="button_add_contract_payment" string="Add payment" type="object" class="btn-primary"/>
+                    <button class="btn-secondary" special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="add_contract_payment_wizard_action" model="ir.actions.act_window">
+        <field name="name">Add contract payment</field>
+        <field name="res_model">add.contract.payment</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>
