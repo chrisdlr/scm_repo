@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20240125\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-22 04:51+0000\n"
-"PO-Revision-Date: 2024-08-22 04:51+0000\n"
+"POT-Creation-Date: 2024-08-23 02:43+0000\n"
+"PO-Revision-Date: 2024-08-23 02:43+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,26 +28,31 @@ msgid "<span class=\"o_stat_info\">Add payment</span>"
 msgstr "<span class=\"o_stat_info\">Agregar pago</span>"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_needaction
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_needaction
 msgid "Action Needed"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_ids
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_ids
 msgid "Activities"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_exception_decoration
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_exception_decoration
 msgid "Activity Exception Decoration"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_state
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_state
 msgid "Activity State"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_type_icon
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_type_icon
 msgid "Activity Type Icon"
 msgstr ""
@@ -69,9 +74,15 @@ msgid "Add payment"
 msgstr "Agregar pago"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_attachment_count
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_attachment_count
 msgid "Attachment Count"
 msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__available_teacher_ids
+msgid "Available Teachers"
+msgstr "Profesores disponibles"
 
 #. module: students_contract_management
 #: model:ir.model.fields.selection,name:students_contract_management.selection__add_contract_payment__payment_method__bank
@@ -120,6 +131,7 @@ msgstr "Contrato"
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__contract_lines
+#: model_terms:ir.ui.view,arch_db:students_contract_management.course_by_students_form_view
 #: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
 msgid "Contract Lines"
 msgstr "Líneas de contrato"
@@ -130,7 +142,74 @@ msgid "Contract Number"
 msgstr "Número de contrato"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__course_id
+msgid "Course"
+msgstr "Curso"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__course_code
+msgid "Course Code"
+msgstr "Código"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__course_credits
+#: model:ir.model.fields,field_description:students_contract_management.field_product_product__course_credits
+#: model:ir.model.fields,field_description:students_contract_management.field_product_template__course_credits
+msgid "Course Credits"
+msgstr "Créditos"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.course_by_students_form_view
+msgid "Course Lines"
+msgstr "Líneas de curso"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__course_name
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__course_name
+msgid "Course Name"
+msgstr "Nombre del curso"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__course_number
+msgid "Course Number"
+msgstr "Número de curso"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract__course_by_student_id
+msgid "Course by Student"
+msgstr "Curso por estudiante"
+
+#. module: students_contract_management
+#: model:ir.actions.act_window,name:students_contract_management.action_open_course_by_students
+#: model:ir.ui.menu,name:students_contract_management.menu_course_by_students
+#: model_terms:ir.ui.view,arch_db:students_contract_management.course_by_students_tree_view
+msgid "Course by students"
+msgstr "Curso por estudiantes"
+
+#. module: students_contract_management
+#: model_terms:ir.ui.view,arch_db:students_contract_management.course_by_students_form_view
+msgid "Course by students form"
+msgstr "Curso por estudiantes"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__courses_line_ids
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: students_contract_management
+#: model:ir.model,name:students_contract_management.model_courses_by_students
+msgid "Courses By Students"
+msgstr "Cursos por estudiantes"
+
+#. module: students_contract_management
+#: model:ir.model,name:students_contract_management.model_courses_by_students_lines
+msgid "Courses By Students Lines"
+msgstr "Líneas de cursos por estudiantes"
+
+#. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__create_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__create_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__create_uid
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__create_uid
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__create_uid
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__create_uid
@@ -139,6 +218,8 @@ msgstr ""
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__create_date
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__create_date
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__create_date
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__create_date
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__create_date
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__create_date
@@ -166,6 +247,8 @@ msgstr "Descripción"
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__display_name
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__display_name
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__display_name
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__display_name
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__display_name
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__display_name
@@ -183,32 +266,58 @@ msgid "Draft"
 msgstr "Borrador"
 
 #. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__eighth
+msgid "Eighth"
+msgstr "Octavo"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__fifth
+msgid "Fifth"
+msgstr "Quinto"
+
+#. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__date_end
 msgid "Finish Date"
 msgstr "Fecha de finalización"
 
 #. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__first
+msgid "First"
+msgstr "Primero"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_follower_ids
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_follower_ids
 msgid "Followers"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_partner_ids
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_partner_ids
 msgid "Followers (Partners)"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__activity_type_icon
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__fourth
+msgid "Fourth"
+msgstr "Cuarto"
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__has_message
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__has_message
 msgid "Has Message"
 msgstr ""
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__id
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__id
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__id
@@ -216,33 +325,52 @@ msgid "ID"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__course_number__ii
+msgid "II"
+msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_exception_icon
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_exception_icon
 msgid "Icon"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__activity_exception_icon
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_exception_icon
 msgid "Icon to indicate an exception activity."
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__message_needaction
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__message_needaction
 msgid "If checked, new messages require your attention."
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__message_has_error
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__message_has_sms_error
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__message_has_error
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_is_follower
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_is_follower
 msgid "Is Follower"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_product_product__is_subject
+#: model:ir.model.fields,field_description:students_contract_management.field_product_template__is_subject
+msgid "Is Subject"
+msgstr "¿Es materia?"
+
+#. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment____last_update
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students____last_update
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines____last_update
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract____last_update
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines____last_update
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment____last_update
@@ -251,6 +379,8 @@ msgstr ""
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__write_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__write_uid
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__write_uid
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__write_uid
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__write_uid
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__write_uid
@@ -259,6 +389,8 @@ msgstr ""
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_add_contract_payment__write_date
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__write_date
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__write_date
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__write_date
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__write_date
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_payment__write_date
@@ -266,27 +398,32 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_main_attachment_id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_main_attachment_id
 msgid "Main Attachment"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_has_error
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_has_error
 msgid "Message Delivery error"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_ids
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_ids
 msgid "Messages"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__my_activity_date_deadline
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__my_activity_date_deadline
 msgid "My Activity Deadline"
 msgstr ""
 
 #. module: students_contract_management
 #. odoo-python
+#: code:addons/students_contract_management/models/course_by_students.py:0
 #: code:addons/students_contract_management/models/students_contract.py:0
 #: code:addons/students_contract_management/models/students_contract.py:0
 #: code:addons/students_contract_management/models/students_contract.py:0
@@ -300,19 +437,27 @@ msgid "New"
 msgstr "Nuevo"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_date_deadline
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_date_deadline
 msgid "Next Activity Deadline"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_summary
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_summary
 msgid "Next Activity Summary"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_type_id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_type_id
 msgid "Next Activity Type"
 msgstr ""
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__ninth
+msgid "Ninth"
+msgstr "Noveno"
 
 #. module: students_contract_management
 #: model:ir.model.fields.selection,name:students_contract_management.selection__students_contract__payment_state__not_paid
@@ -330,21 +475,25 @@ msgid "Notes"
 msgstr "Notas"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_needaction_counter
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_needaction_counter
 msgid "Number of Actions"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_has_error_counter
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_has_error_counter
 msgid "Number of errors"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__message_needaction_counter
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__message_needaction_counter
 msgid "Number of messages requiring action"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__message_has_error_counter
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr ""
@@ -423,7 +572,12 @@ msgid "Payments"
 msgstr "Pagos"
 
 #. module: students_contract_management
-#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__product_tmpl_id
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__period
+msgid "Period"
+msgstr "Período"
+
+#. module: students_contract_management
+#: model:ir.model,name:students_contract_management.model_product_template
 msgid "Product"
 msgstr "Producto"
 
@@ -433,6 +587,7 @@ msgid "Quantity"
 msgstr "Cantidad"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__activity_user_id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__activity_user_id
 msgid "Responsible User"
 msgstr ""
@@ -444,14 +599,30 @@ msgid "Role"
 msgstr "Rol"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__message_has_sms_error
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_has_sms_error
 msgid "SMS Delivery error"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__second
+msgid "Second"
+msgstr "Segundo"
+
+#. module: students_contract_management
 #: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
 msgid "Set to draft"
 msgstr "Establecer como borrador"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__seventh
+msgid "Seventh"
+msgstr "Séptimo"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__sixth
+msgid "Sixth"
+msgstr "Sexto"
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__date_start
@@ -464,6 +635,7 @@ msgid "State"
 msgstr "Estado"
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__activity_state
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_state
 msgid ""
 "Status based on activities\n"
@@ -473,6 +645,7 @@ msgid ""
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__student_id
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__student_id
 #: model:ir.model.fields.selection,name:students_contract_management.selection__res_partner__role__student
 msgid "Student"
@@ -506,14 +679,29 @@ msgid "Students contract form"
 msgstr "Formulario de contrato de estudiantes"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__subject_id
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__subject_id
+msgid "Subject"
+msgstr "Materia"
+
+#. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__price_subtotal
 msgid "Subtotal"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__course_teacher_id
+#: model:ir.model.fields,field_description:students_contract_management.field_product_product__course_teacher_ids
+#: model:ir.model.fields,field_description:students_contract_management.field_product_template__course_teacher_ids
+#: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__teacher_id
 #: model:ir.model.fields.selection,name:students_contract_management.selection__res_partner__role__teacher
 msgid "Teacher"
 msgstr "Docente"
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__tenth
+msgid "Tenth"
+msgstr "Décimo"
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__terms
@@ -524,6 +712,16 @@ msgstr "Términos y condiciones"
 #: model_terms:ir.ui.view,arch_db:students_contract_management.students_contract_form_view
 msgid "Terms and conditions..."
 msgstr "Términos y condiciones..."
+
+#. module: students_contract_management
+#: model:ir.model.constraint,message:students_contract_management.constraint_courses_by_students_course_number_student_period_uniq
+msgid "The course number must be unique per student and period!"
+msgstr "El número de curso debe ser único por estudiante y período."
+
+#. module: students_contract_management
+#: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__third
+msgid "Third"
+msgstr "Tercero"
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__amount_total
@@ -541,6 +739,7 @@ msgid "Total to pay"
 msgstr "Total a pagar"
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__activity_exception_decoration
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr ""
@@ -556,11 +755,13 @@ msgid "Validity"
 msgstr "Validez"
 
 #. module: students_contract_management
+#: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__website_message_ids
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__website_message_ids
 msgid "Website Messages"
 msgstr ""
 
 #. module: students_contract_management
+#: model:ir.model.fields,help:students_contract_management.field_courses_by_students__website_message_ids
 #: model:ir.model.fields,help:students_contract_management.field_students_contract__website_message_ids
 msgid "Website communication history"
 msgstr ""
