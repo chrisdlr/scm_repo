@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+	<t t-name="StudentsContractDashboardGraphics" owl="1">
+		<div class="vh-100 overflow-auto bg-muted">
+			<div class="row m-3">
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="col m-0 p-0">
+							<div class="shadow-sm border m-2 p-4 bg-white">
+								<div class="d-flex align-items-center justify-content-between">
+									<h1 class="text-primary fw-bold">Students Contract Dashboard</h1>
+
+                                    <div class="col-md-2">
+										<label>Start Date</label>
+                                        <DateTimePicker date="state.startDate"
+                                                        onDateTimeChanged.bind="(datetime) => this.onDateChange(datetime, 'startDate')"
+                                        />
+									</div>
+
+                                    <div class="col-md-2">
+										<label>End Date</label>
+                                        <DateTimePicker date="state.endDate"
+                                                        onDateTimeChanged.bind="(datetime) => this.onDateChange(datetime, 'endDate')"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-lg-12">
+					<div class="row">
+						<div class="col-lg-6 m-0 p-0 mb-5">
+							<div class="shadow-sm border m-2 p-4 bg-white">
+								<div class="d-flex align-items-center justify-content-between">
+									<h1 class="text-primary fw-bold">Discount rule</h1>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer">
+										<span class="fa fa-arrow-right text-white"/>
+									</div>
+								</div>
+                                <ChartRenderer type="'pie'" title="'Discount rule Report'"
+                                               config="state.discountRules"/>
+							</div>
+						</div>
+
+                        <div class="col-lg-6 m-0 p-0 mb-5">
+							<div class="shadow-sm border m-2 p-4 bg-white">
+								<div class="d-flex align-items-center justify-content-between">
+									<h1 class="text-primary fw-bold">Discounts granted</h1>
+                                    <div class="px-3 py-1 bg-primary cursor-pointer">
+										<span class="fa fa-arrow-right text-white"/>
+									</div>
+								</div>
+                                <ChartRenderer type="'pie'" title="'Discounts granted'"
+                                               config="state.discountsByContract"/>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</t>
+</templates>
