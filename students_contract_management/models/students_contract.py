@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models, api, _
+from odoo import fields, models, api, Command, _
 from dateutil.relativedelta import relativedelta
 
 
@@ -25,8 +25,19 @@ class StudentsContract(models.Model):
                 val['contract_number'] = self.env['ir.sequence'].next_by_code('students.contract.sequence') or _('New')
         return super(StudentsContract, self).create(vals)
 
+    @api.onchange("course_by_student_id")
+    def _onchange_course_by_student_id(self):
+        for rec in self:
+            if rec.course_by_student_id:
+                rec.contract_lines = [(5, 0, 0)]
+                rec.contract_lines = [Command.create({
+                    "subject_id": line.subject_id.id,
+                    "teacher_id": line.course_teacher_id.id,
+                }) for line in rec.course_by_student_id.courses_line_ids]
+
     contract_number = fields.Char(string="Contract Number", required=True, copy=False, readonly=True, index=True, default=lambda self: _("New"))
     student_id = fields.Many2one("res.partner", domain="[('role', '=', 'student')]", string="Student", tracking=True, required=True)
+    course_by_student_id = fields.Many2one("courses.by.students", domain="[('student_id', '=', student_id)]", string="Course by Student", tracking=True, required=True)
     state = fields.Selection([
         ("draft", "Draft"),
         ("confirmed", "Confirmed"),
