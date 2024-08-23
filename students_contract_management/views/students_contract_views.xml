@@ -174,6 +174,11 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <record id="action_open_students_contract_dashboard" model="ir.actions.client">
+		<field name="name">Dashboard</field>
+		<field name="tag">students_contract_dashboard</field>
+	</record>
+
     </data>
 
 </odoo>

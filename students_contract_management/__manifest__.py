@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Student Contract Management",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "summary": "Student Contract Management",
     "sequence": -1,
     "description": """Student Contract Management""",
@@ -24,6 +24,14 @@
         "views/product_template_inherit_views.xml",
         "views/menu_items.xml",
     ],
+
+    "assets": {
+        "web.assets_backend": [
+            "students_contract_management/static/src/components/**/*.js",
+            "students_contract_management/static/src/components/**/*.xml",
+            "students_contract_management/static/src/components/**/*.scss",
+        ],
+    },
 
     "installable": True,
     "application": True,
