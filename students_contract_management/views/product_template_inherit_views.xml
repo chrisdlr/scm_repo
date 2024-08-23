@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="product_template_students_contract_fields" model="ir.ui.view">
+            <field name="name">Fields for students contract management</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+
+                <field name="detailed_type" position="after">
+                    <field name="is_subject" widget="boolean_toggle"/>
+                    <field name="course_credits" attrs="{'invisible': [('is_subject', '=', False)]}"/>
+                    <field name="course_teacher_ids" widget="many2many_tags" options="{'no_open': True, 'no_create': True}" attrs="{'invisible': [('is_subject', '=', False)]}"/>
+                </field>
+
+            </field>
+        </record>
+    </data>
+</odoo>

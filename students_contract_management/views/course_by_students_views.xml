@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="course_by_students_tree_view" model="ir.ui.view">
+            <field name="name">Course by students tree view</field>
+            <field name="model">courses.by.students</field>
+            <field name="arch" type="xml">
+                <tree string="Course by students">
+                    <field name="course_name"/>
+                    <field name="student_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="course_by_students_form_view" model="ir.ui.view">
+            <field name="name">Course by students form view</field>
+            <field name="model">courses.by.students</field>
+            <field name="arch" type="xml">
+                <form string="Course by students form">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="course_name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group name="student_info_header">
+                            <group name="student_info">
+                                <field name="student_id" options="{'no_open': True, 'no_create': True}"/>
+                            </group>
+                            <group name="course_info">
+                                <field name="course_number"/>
+                                <field name="period"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Course Lines" name="course_lines">
+                                <field name="courses_line_ids">
+                                    <form>
+                                        <group>
+                                            <field name="course_id" invisible="1"/>
+                                            <field name="available_teacher_ids" invisible="1"/>
+                                            <field name="subject_id" options="{'no_open': True, 'no_create': True}"/>
+                                        </group>
+                                        <group>
+                                            <field name="course_code"/>
+                                            <field name="course_credits"/>
+                                            <field name="course_teacher_id" options="{'no_open': True, 'no_create': True}"/>
+                                        </group>
+                                    </form>
+
+                                    <tree string="Contract Lines" editable="bottom">
+                                        <field name="course_id" invisible="1"/>
+                                        <field name="available_teacher_ids" invisible="1"/>
+                                        <field name="subject_id" options="{'no_open': True, 'no_create': True}"/>
+                                        <field name="course_code"/>
+                                        <field name="course_credits"/>
+                                        <field name="course_teacher_id" options="{'no_open': True, 'no_create': True}"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_open_course_by_students" model="ir.actions.act_window">
+            <field name="name">Course by students</field>
+            <field name="res_model">courses.by.students</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+
+</odoo>

@@ -10,7 +10,6 @@
                     <field name="student_id"/>
                     <field name="date_start"/>
                     <field name="date_end"/>
-                    <field name="date_end"/>
                     <field name="state"
                            widget="badge"
                            decoration-warning="state == 'draft'"
@@ -66,7 +65,8 @@
                         </div>
                         <group name="contract_header">
                             <group name="student_info">
-                                <field name="student_id"/>
+                                <field name="student_id" options="{'no_open': True, 'no_create': True}"/>
+                                <field name="course_by_student_id" options="{'no_open': True, 'no_create': True}"/>
                                 <field name="currency_id"/>
                             </group>
                             <group name="contract_info">
@@ -92,7 +92,8 @@
                                     <form>
                                         <group>
                                             <field name="contract_id" invisible="1"/>
-                                            <field name="product_tmpl_id"/>
+                                            <field name="subject_id" options="{'no_open': True, 'no_create': True}"/>
+                                            <field name="teacher_id" readonly="1" options="{'no_open': True, 'no_create': True}"/>
                                         </group>
                                         <group>
                                             <field name="quantity"/>
@@ -103,7 +104,8 @@
 
                                     <tree string="Contract Lines" editable="bottom">
                                         <field name="contract_id" invisible="1"/>
-                                        <field name="product_tmpl_id"/>
+                                        <field name="subject_id" options="{'no_open': True, 'no_create': True}"/>
+                                        <field name="teacher_id" readonly="1" force_save="1" options="{'no_open': True, 'no_create': True}"/>
                                         <field name="description" widget="section_and_note_text"/>
                                         <field name="quantity"/>
                                         <field name="price_unit"/>

@@ -7,11 +7,11 @@
             action="action_open_students_contract_management"
             sequence="1"
     >
-<!--        <menuitem-->
-<!--                id="menu_patient_queue_prototype"-->
-<!--                name="Patient Queue"-->
-<!--                action="action_main_queue_dashboard_prototype"-->
-<!--                sequence="1"-->
-<!--        />-->
+        <menuitem
+                id="menu_course_by_students"
+                name="Course by students"
+                action="action_open_course_by_students"
+                sequence="1"
+        />
     </menuitem>
 </odoo>
