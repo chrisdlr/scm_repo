@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20240125\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-23 02:43+0000\n"
-"PO-Revision-Date: 2024-08-23 02:43+0000\n"
+"POT-Creation-Date: 2024-08-24 00:30+0000\n"
+"PO-Revision-Date: 2024-08-24 00:30+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -142,6 +142,34 @@ msgid "Contract Number"
 msgstr "Número de contrato"
 
 #. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
+#, python-format
+msgid "Contracts by payment state"
+msgstr "Contrato por estado de pago"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.js:0
+#, python-format
+msgid "Contracts by payment state report"
+msgstr "Contratos por estado de pago"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
+#, python-format
+msgid "Contracts by students"
+msgstr "Contratos por estudiantes"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.js:0
+#, python-format
+msgid "Contracts by students report"
+msgstr "Contratos por estudiantes"
+
+#. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students_lines__course_id
 msgid "Course"
 msgstr "Curso"
@@ -241,6 +269,12 @@ msgid "Currency"
 msgstr "Moneda"
 
 #. module: students_contract_management
+#: model:ir.actions.client,name:students_contract_management.action_open_students_contract_dashboard
+#: model:ir.ui.menu,name:students_contract_management.menu_students_contracts_dashboard
+msgid "Dashboard"
+msgstr ""
+
+#. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract_lines__description
 msgid "Description"
 msgstr "Descripción"
@@ -269,6 +303,13 @@ msgstr "Borrador"
 #: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__eighth
 msgid "Eighth"
 msgstr "Octavo"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
+#, python-format
+msgid "End Date"
+msgstr "Fecha de finalización"
 
 #. module: students_contract_management
 #: model:ir.model.fields.selection,name:students_contract_management.selection__courses_by_students__period__fifth
@@ -414,6 +455,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__message_ids
 msgid "Messages"
 msgstr ""
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
+#, python-format
+msgid "Most requested subjects"
+msgstr "Materias más solicitadas"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.js:0
+#, python-format
+msgid "Most requested subjects report"
+msgstr "Reporte de materias más solicitadas"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
+#, python-format
+msgid "Most requested teachers"
+msgstr "Profesores más solicitados"
 
 #. module: students_contract_management
 #: model:ir.model.fields,field_description:students_contract_management.field_courses_by_students__my_activity_date_deadline
@@ -625,7 +687,10 @@ msgid "Sixth"
 msgstr "Sexto"
 
 #. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
 #: model:ir.model.fields,field_description:students_contract_management.field_students_contract__date_start
+#, python-format
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
@@ -662,6 +727,13 @@ msgstr "Contratos de estudiantes"
 #: model:ir.model,name:students_contract_management.model_students_contract_payment
 msgid "Students Contract"
 msgstr "Contrato de estudiantes"
+
+#. module: students_contract_management
+#. odoo-javascript
+#: code:addons/students_contract_management/static/src/components/students_contract_dashboard/StudentsContractDashboard.xml:0
+#, python-format
+msgid "Students Contract Dashboard"
+msgstr "Dashboard de contratos de estudiantes"
 
 #. module: students_contract_management
 #: model:ir.model,name:students_contract_management.model_students_contract_lines
