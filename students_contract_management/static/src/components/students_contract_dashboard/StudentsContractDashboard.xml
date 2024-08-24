@@ -33,7 +33,7 @@
 						<div class="col-lg-6 m-0 p-0 mb-3">
 							<div class="shadow-sm border m-2 p-4 bg-white">
 								<div class="d-flex align-items-center justify-content-between">
-									<h1 class="text-primary fw-bold">Contract by payment state</h1>
+									<h1 class="text-primary fw-bold">Contracts by payment state</h1>
 								</div>
                                 <ChartRenderer type="'pie'" title="state.contractByPaymentState.title"
                                                config="state.contractByPaymentState"/>

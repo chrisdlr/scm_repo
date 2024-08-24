@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Student Contract Management",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "summary": "Student Contract Management",
     "sequence": -1,
     "description": """Student Contract Management""",
