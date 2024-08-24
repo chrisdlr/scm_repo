@@ -30,29 +30,43 @@
 
                 <div class="col-lg-12">
 					<div class="row">
-						<div class="col-lg-6 m-0 p-0 mb-5">
+						<div class="col-lg-6 m-0 p-0 mb-3">
 							<div class="shadow-sm border m-2 p-4 bg-white">
 								<div class="d-flex align-items-center justify-content-between">
-									<h1 class="text-primary fw-bold">Discount rule</h1>
-                                    <div class="px-3 py-1 bg-primary cursor-pointer">
-										<span class="fa fa-arrow-right text-white"/>
-									</div>
+									<h1 class="text-primary fw-bold">Contract by payment state</h1>
 								</div>
-                                <ChartRenderer type="'pie'" title="'Discount rule Report'"
-                                               config="state.discountRules"/>
+                                <ChartRenderer type="'pie'" title="state.contractByPaymentState.title"
+                                               config="state.contractByPaymentState"/>
 							</div>
 						</div>
 
-                        <div class="col-lg-6 m-0 p-0 mb-5">
+						<div class="col-lg-6 m-0 p-0 mb-3">
 							<div class="shadow-sm border m-2 p-4 bg-white">
 								<div class="d-flex align-items-center justify-content-between">
-									<h1 class="text-primary fw-bold">Discounts granted</h1>
-                                    <div class="px-3 py-1 bg-primary cursor-pointer">
-										<span class="fa fa-arrow-right text-white"/>
-									</div>
+									<h1 class="text-primary fw-bold">Contracts by students</h1>
 								</div>
-                                <ChartRenderer type="'pie'" title="'Discounts granted'"
-                                               config="state.discountsByContract"/>
+                                <ChartRenderer type="'doughnut'" title="state.contractByStudents.title"
+                                               config="state.contractByStudents"/>
+							</div>
+						</div>
+
+						<div class="col-lg-6 m-0 p-0 mb-5">
+							<div class="shadow-sm border m-2 p-4 bg-white">
+								<div class="d-flex align-items-center justify-content-between">
+									<h1 class="text-primary fw-bold">Most requested subjects</h1>
+								</div>
+                                <ChartRenderer type="'bar'" title="state.mostRequestedSubjects.title"
+                                               config="state.mostRequestedSubjects"/>
+							</div>
+						</div>
+
+						<div class="col-lg-6 m-0 p-0 mb-5">
+							<div class="shadow-sm border m-2 p-4 bg-white">
+								<div class="d-flex align-items-center justify-content-between">
+									<h1 class="text-primary fw-bold">Most requested teachers</h1>
+								</div>
+                                <ChartRenderer type="'bar'" title="state.mostRequestedTeachers.title"
+                                               config="state.mostRequestedTeachers"/>
 							</div>
 						</div>
 

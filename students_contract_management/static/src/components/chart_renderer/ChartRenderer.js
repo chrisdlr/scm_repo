@@ -45,54 +45,6 @@ export class ChartRenderer extends Component {
                 type: this.props.type,
                 data: this.props.config.data,
                 options: {
-                    onClick: (e) => {
-                        const active = e.chart.getActiveElements();
-                        if (active) {
-                            const label = e.chart.data.labels[active[0].index];
-                            const dataset = e.chart.data.datasets[active[0].datasetIndex].label;
-
-                            const {labelField, domain} = this.props.config;
-                            let newDomain = domain ? domain : [];
-
-                            if (labelField) {
-                                if (labelField.includes('date')) {
-                                    const timeStamp = Date.parse(label);
-                                    const selectedMonth = moment(timeStamp);
-                                    const startMonth = selectedMonth.format('YYYY-MM-DD');
-                                    const endMonth = selectedMonth.endOf('month').format('YYYY-MM-DD');
-                                    newDomain.push(['date', '>=', startMonth], ['date', '<=', endMonth]);
-                                } else {
-                                    newDomain.push([labelField, '=', label]);
-                                }
-                            }
-
-                            if (dataset === 'Quotations') {
-                                newDomain.forEach((item) => {
-                                    if (item[0] === 'state') {
-                                        item[2] = ['draft', 'sent'];
-                                    }
-                                });
-                            }
-
-                            if (dataset === 'Orders') {
-                                newDomain.forEach((item) => {
-                                    if (item[0] === 'state') {
-                                        item[2] = ['sale', 'done'];
-                                    }
-                                });
-                            }
-
-                            this.actionService.doAction({
-                                type: 'ir.actions.act_window',
-                                name: this.props.title,
-                                res_model: "sale.report",
-                                domain: newDomain,
-                                views: [
-                                    [false, 'list'], [false, 'form']
-                                ],
-                            })
-                        }
-                    },
                     responsive: true,
                     plugins: {
 
